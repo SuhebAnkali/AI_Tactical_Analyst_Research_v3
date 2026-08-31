@@ -1,0 +1,55 @@
+detector:
+  model_path: models/football_yolo11n.pt
+  confidence: 0.25
+  iou: 0.45
+  image_size: 640
+  device: cpu
+  half_precision: false
+  ball_confidence: 0.12
+tracker:
+  high_thresh: 0.35
+  low_thresh: 0.10
+  new_track_thresh: 0.45
+  match_iou_thresh: 0.30
+  ball_match_iou_thresh: 0.15
+  max_time_lost: 45
+  min_hits: 2
+team_classifier:
+  shirt_crop_top_ratio: 0.18
+  shirt_crop_bottom_ratio: 0.58
+  kmeans_clusters: 3
+  temporal_window: 30
+  min_pixels: 120
+  color_history_decay: 0.85
+  grass_hsv_low: [28, 25, 25]
+  grass_hsv_high: [95, 255, 255]
+homography:
+  auto_calibrate: true
+  manual_calibration_path: configs/calibration_sample.json
+  refresh_interval_frames: 90
+  line_threshold: 120
+  min_intersections: 4
+  ransac_reproj_threshold: 5.0
+formation:
+  update_interval_frames: 10
+  smoothing_window: 24
+  min_players: 7
+  direction_flip_margin: 3.5
+  clustering_bandwidth: 9.0
+heatmap:
+  bins_x: 64
+  bins_y: 42
+  gaussian_sigma: 1.5
+events:
+  possession_radius_m: 2.3
+  pass_min_distance_m: 4.0
+  shot_min_speed_mps: 8.0
+  shot_final_third_x_m: 78.0
+  ball_recovery_gap_frames: 12
+  touch_proximity_px: 55.0
+  trail_length: 25
+output_dir: outputs
+export_annotated_video: true
+annotate_video: true
+video_stride: 2
+max_frames: null

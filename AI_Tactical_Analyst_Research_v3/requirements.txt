@@ -1,0 +1,15 @@
+ultralytics>=8.3.0
+opencv-python>=4.10.0
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.14.0
+scikit-learn>=1.5.0
+matplotlib>=3.9.0
+plotly>=5.24.0
+streamlit>=1.38.0
+shapely>=2.0.6
+supervision>=0.23.0
+torch>=2.4.0
+PyYAML>=6.0.2
+tqdm>=4.66.5
+reportlab>=4.2.2

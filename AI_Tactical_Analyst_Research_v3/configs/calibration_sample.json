@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "image_points": [[180, 90], [1100, 95], [1210, 650], [80, 650], [640, 360]],
+  "pitch_points": [[0.0, 0.0], [105.0, 0.0], [105.0, 68.0], [0.0, 68.0], [52.5, 34.0]],
+  "notes": "Example manual calibration. Replace image_points with correspondences from your camera view while keeping pitch_points in meters."
+}

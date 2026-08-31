@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# YOLO/model weights
+*.pt
+*.pth
+*.onnx
+
+# Generated outputs
+outputs/
+results/
+runs/
+
+# Generated datasets/reports
+*.csv
+*.xlsx
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
